@@ -4,7 +4,7 @@ function kirim() {
   var pilihan = "";
 
   for (var i = 1; i <= jumPil; i++) {
-    pilihan += "<p><label for='hobi' class='form-label'>Hobi ke - </label>" + i + "<input type='text' class='form-control' id='namaBel' aria-describedby='namaBel' placeholder = 'Masukkan Hobi'>" + "</p>";
+    pilihan += "<p><label for='hobi' class='form-label'>Hobi ke - </label>" + i + "<input type='text' class='form-control' id='hobi' aria-describedby='hobi' placeholder = 'Masukkan Hobi'>" + "</p>";
   }
   button1x = "<p>" + '<button type="submit" class="btn btn-primary" onclick="createCheckBoxes()">Submit</button>' + "</p>";
   document.getElementById("choose1").innerHTML = pilihan;
@@ -54,7 +54,7 @@ function doVal() {
         options.push(selectedOptions[i].value);
       }
       result.innerHTML =
-        "<br>Hallo, nama saya " + testName.value + " " + testName2.value + ", dengan email " + email.value + ", saya mempunyai sejumlah " + jumPil + " pilihan hobi yaitu " + checkboxes + ",dan saya menyukai " + options.join(", ") + ".";
+        "<br>Hallo, nama saya " + testName.value + " " + testName2.value + ", dengan email " + email.value + ", saya mempunyai sejumlah " + jumPil + " pilihan hobi yaitu " + inputs + ",dan saya menyukai " + options.join(", ") + ".";
     } else {
       result.textContent = "Please select an option.";
     }
