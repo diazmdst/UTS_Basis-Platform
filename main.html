@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous"/>
     
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css"/>
     <title>About Me | Diaz Madestu</title>
 </head>
-  <body>
+  <body id="beranda">
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #156a70">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #156a70">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="gambar/LOGO DIAZ.png" alt="Logo" width="120" height="24" />
@@ -24,19 +27,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link" aria-current="page" href="#beranda">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang</a>
+              <a class="nav-link" href="#tentang">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kisahku</a>
+              <a class="nav-link" href="#kisahku">Kisahku</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pendidikan</a>
+              <a class="nav-link" href="#pendidikan">Pendidikan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tugas</a>
+              <a class="nav-link" href="#tugas">Tugas</a>
             </li>
             </li>
           </ul>
@@ -47,12 +50,217 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col"></div>
+            </div>
         <img src="gambar/diazmdst.jpg" alt="diazmdst" width="200"
         class="rounded-circle img-thumbnail"/>
-        <h1 class="display-4">Diaz Madestu Pratama</h1>
-        <p class="lead">Mahasiswa | Fotografer | Musisi</p>
+        <h1 class="display-4">Diaz Madestu Pratama<br>215314060</h1>
+        <p class="lead">Mahasiswa | Fotografer | Wota</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,192L60,186.7C120,
+            181,240,171,360,186.7C480,203,600,245,720,256C840,267,960,245,
+            1080,229.3C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,
+            320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,
+            480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
       </section>
     <!-- Jumbotron End -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Tentang -->
+    <section id="tentang">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Tentang Saya</h2>
+                </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+            <div class="col-md-5">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    In nobis expedita voluptatum omnis eaque dolores magnam nam consequuntur repellat cupiditate!</p>
+            </div>
+            <div class="col-md-5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eius sapiente fugit repudiandae 
+                    perferendis suscipit, pariatur sint sunt porro ducimus, tempora quisquam magnam quasi.</p>
+            </div>
+        </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#97aad1" fill-opacity="1"
+            d="M0,160L60,160C120,160,240,160,360,149.3C480,139,600,117,720,128C840,139,960,181,1080,192C1200,
+            203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,
+            320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir Tentang -->
+
+    <!-- kisahku -->
+    <section id="kisahku">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h2>Kisahku</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="gambar/dlv.jpg" class="card-img-top" alt="dealova bukber">
+                        <div class="card-body">
+                          <h5 class="card-title">Buka Bersama Dealova</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.instagram.com/dealova_ofc/" class="btn btn-primary"">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="gambar/vnsky.jpg" class="card-img-top" alt="vanesky bukber">
+                        <div class="card-body">
+                          <h5 class="card-title">Buka Bersama Vanesky</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://www.instagram.com/vaneskyid/" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="gambar/dlv.jpg" class="card-img-top" alt="entah">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="gambar/dlv.jpg" class="card-img-top" alt="entah">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" 
+            d="M0,128L30,138.7C60,149,120,171,180,186.7C240,203,300,213,360,218.7C420,224,480,224,540,213.3C600,203,
+            660,181,720,192C780,203,840,245,900,245.3C960,245,1020,203,1080,181.3C1140,160,1200,160,1260,186.7C1320,213,
+            1380,267,1410,293.3L1440,320L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,
+            960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,
+            320,60,320,30,320L0,320Z"></path></svg>
+    </section>
+    <!-- kisahku akhir -->
+
+    <!-- Pendidikan -->
+    <section id="pendidikan">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>Riwayat Pendidikan</h2>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nama Sekolah</th>
+                        <th scope="col">Alamat Sekolah</th>
+                        <th scope="col">Tahun</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>TK Jebugan Baru</td>
+                        <td>Jl. Ra. Kartini No.45, Bantul Timur, Trirenggo,<br>Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55714</td>
+                        <td>2007-2009</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>SD Kanisius Bantul</td>
+                        <td>Jl. Badegan No.14, Badegan, Bantul, Kec. Bantul,<br>Kabupaten Bantul, Daerah Istimewa Yogyakarta 55711</td>
+                        <td>2009-2015</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>SMP N 2 Bantul</td>
+                        <td>Jalan Raya Bantul No. 2/III, Melikan Lor, Bantul,<br>Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55186</td>
+                        <td>2015-2018</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>SMA N 2 Bantul</td>
+                        <td>Jl. Ra. Kartini, Bantul Timur, Trirenggo,<br>Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55714</td>
+                        <td>2018-2021</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Universitas Sanata Dharma</td>
+                        <td>Jl. Paingan, Krodan, Maguwoharjo, Kec. Depok,<br>Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</td>
+                        <td>2021-sekarang</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#97aad1" fill-opacity="1"
+            d="M0,160L48,165.3C96,171,192,181,288,170.7C384,160,480,128,576,122.7C672,117,768,139,864,144C960,
+            149,1056,139,1152,138.7C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,
+            320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path></svg>
+    </section>
+    <!-- Pendidikan akhir -->
+
+    <!-- Tugas -->
+    <section id="tugas">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>Tugas</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <form>
+                        <div class="mb-3">
+                          <label for="namaDep" class="form-label">Nama Depan</label>
+                          <input type="text" class="form-control" id="namaDep" aria-describedby="namDep">
+                        </div>
+                        <div class="mb-3">
+                          <label for="namaBel" class="form-label">Nama Belakang</label>
+                          <input type="text" class="form-control" id="namaBel" aria-describedby="namBel">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="email">   
+                        </div>
+                        <div class="mb-3">
+                          <label for="jumPil" class="form-label">Jumlah Pilihan Hobi</label>
+                          <input type="integer" class="form-control" id="jumPil" aria-describedby="jumPil">
+                        </div>
+                        
+                       
+                        <button type="submit" class="btn btn-primary" onclick="kirim()">Submit</button>
+                        <div id="choose1"></div>
+                        <div id="button1"></div>
+                        <form>
+                            <div id="list"></div>
+                            <div id="submit1"></div>
+                        </form>
+                        <p id="result"></p>
+                        <script src="mbuh.js"></script>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tugas akhir -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>

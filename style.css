@@ -1,4 +1,16 @@
 .jumbotron {
-  padding: 2rem 1rem;
+  padding-top: 6rem;
   background-color: #97aad1;
+}
+
+#kisahku {
+  background-color: #97aad1;
+}
+
+#tugas {
+  background-color: #97aad1;
+}
+
+section {
+  padding-top: 5rem;
 }
