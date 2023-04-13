@@ -4,9 +4,9 @@ function kirim() {
   var pilihan = "";
 
   for (var i = 1; i <= jumPil; i++) {
-    pilihan += "<p><label for='hobi' class='form-label'>Hobi ke - </label>" + i + "<input type='text' class='form-control' id='hobi' aria-describedby='hobi' placeholder = 'Masukkan Hobi'>" + "</p>";
+    pilihan += "<p><label for='hobi' class='form-label'>Hobi ke - </label>" + i + "<input type='text' class='form-control' id='hobi" + i + "' aria-describedby='hobi' placeholder = 'Masukkan Hobi'>" + "</p>";
   }
-  button1x = "<p>" + '<button type="submit" class="btn btn-primary" onclick="createCheckBoxes()">Submit</button>' + "</p>";
+  button1x = "<p>" + '<button type="button" class="btn btn-primary" onclick="createCheckBoxes()">Submit</button>' + "</p>";
   document.getElementById("choose1").innerHTML = pilihan;
   document.getElementById("button1").innerHTML = button1x;
 }
@@ -22,9 +22,9 @@ function createCheckBoxes() {
       checkboxes += '<input type="checkbox" name="option" value="' + inputs[i].value + '">' + inputs[i].value + "<br>";
     }
   }
-  submit = '<input type="submit" class="btn btn-primary" onclick="doVal()">';
+  submit = '<input type="button" class="btn btn-primary" onclick="doVal()" value="Submit">';
   document.getElementById("submit1").innerHTML = submit;
-  list.innerHTML = checkboxes;
+  document.getElementById("list").innerHTML = checkboxes;
 }
 
 function doVal() {
@@ -44,19 +44,21 @@ function doVal() {
     }
   }
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    var selectedOptions = document.querySelectorAll('input[name="option"]:checked');
+  var selectedOptions = document.querySelectorAll('input[name="option"]:checked');
 
-    if (selectedOptions.length > 0) {
-      var options = [];
-      for (var i = 0; i < selectedOptions.length; i++) {
-        options.push(selectedOptions[i].value);
-      }
-      result.innerHTML =
-        "<br>Hallo, nama saya " + testName.value + " " + testName2.value + ", dengan email " + email.value + ", saya mempunyai sejumlah " + jumPil + " pilihan hobi yaitu " + inputs + ",dan saya menyukai " + options.join(", ") + ".";
-    } else {
-      result.textContent = "Please select an option.";
+  if (selectedOptions.length > 0) {
+    var options = [];
+    for (var i = 0; i < selectedOptions.length; i++) {
+      options.push(selectedOptions[i].value);
     }
-  });
+    result.innerHTML = "<br>Hallo, nama saya " + testName.value + " " + testName2.value + ", dengan email " + email.value + ", saya mempunyai sejumlah " + jumPil + " pilihan hobi yaitu ";
+
+    for (var i = 1; i <= jumPil; i++) {
+      result.innerHTML += document.getElementById("hobi" + i).value + ", ";
+    }
+
+    result.innerHTML += "dan saya menyukai " + options.join(", ") + ".";
+  } else {
+    result.textContent = "Please select an option.";
+  }
 }
