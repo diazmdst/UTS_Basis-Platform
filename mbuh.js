@@ -1,14 +1,14 @@
 function kirim() {
   var jumPil = document.getElementById("jumPil").value;
-  var button1x;
+  var button;
   var pilihan = "";
 
   for (var i = 1; i <= jumPil; i++) {
     pilihan += "<p><label for='hobi' class='form-label'>Hobi ke - </label>" + i + "<input type='text' class='form-control' id='hobi" + i + "' aria-describedby='hobi' placeholder = 'Masukkan Hobi'>" + "</p>";
   }
-  button1x = "<p>" + '<button type="button" class="btn btn-primary" onclick="createCheckBoxes()">Submit</button>' + "</p>";
+  button = "<p>" + '<button type="button" class="btn btn-primary" onclick="createCheckBoxes()">Submit</button>' + "</p>";
   document.getElementById("choose1").innerHTML = pilihan;
-  document.getElementById("button1").innerHTML = button1x;
+  document.getElementById("button1").innerHTML = button;
 }
 
 function createCheckBoxes() {
